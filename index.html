@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  
+</head>
+
+<body>
+
+<h1>Sub to Hacker AU</h1>
+
+
+<input type="text" name="search" id="search">
+
+<button id="searchbtn" class="searchbtn">search</button>
+
+<div class="chat_GPT" id="chatGPT">
+  <h4>chat GPT</h4>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKAXo4lxZ8cJwJDimWMKvMwEhMd9rMmMeSA&usqp=CAU" alt="gpt">
+</div>
+
+<div class="insta" id="inst">
+  <h4>Instagram</h4>
+    <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="insta">
+</div>
+<div class="replit" id="replit">
+  <h4>replit</h4>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png" alt="replit">
+</div>
+
+<div class="git" id="git">
+  <h4>git hub</h4>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHxWih1iWrbginpv7P9Fb9Q3frm_OP7cPDQ&usqp=CAU">
+</div>
+<div class="YHAU" id="hacker">
+  <h4>hacker AU</h4>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSneXwBqkkq7fH2v7CagUXNWwhpwNbzWnYAjw&usqp=CAU">
+</div>
+
+<!-- css -->
+
+<style>
+  
+  div{
+  background-color: #212121;
+  width: 200px;
+  height: 200px;
+  border-radius: 9px;
+  margin: 70px;
+}
+h4{
+  color: white;
+  text-align: center;
+  }
+body{
+  background-color:#0f0f0f;
+}
+input{
+  color: white;
+  background-color: #212121;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 250px;
+  border-color: black;
+}
+img{
+  width: 50px;
+  height: 50px;
+  margin-left: 80px;
+  margin-top: 40px;
+  border-radius: 7px;
+}
+h1{
+  color:white;
+  text-align: center;
+  margin-top: 70px;
+}
+div:hover{
+  background-color: #363636;
+}
+.searchbtn{
+  margin-left: 145px;
+  border-radius: 5px;
+}
+
+  
+</style>
+
+
+  <!-- java script -->
+  <script>
+    let insta = document.getElementById("inst");
+
+let instaurl = "https://www.instagram.com/";
+
+insta.addEventListener('click', function() {
+  openLink();
+});
+
+function openLink(){
+  window.open(instaurl, "_blank");
+}
+
+
+let GPT = document.getElementById("chatGPT");
+
+let GPTURL = "https://chat.openai.com/chat";
+
+GPT.addEventListener('click', function() {
+  openLink2();
+});
+
+function openLink2(){
+  window.open(GPTURL, "_blank");
+}
+
+let Replit = document.getElementById("replit");
+
+let RURL = "https://replit.com";
+
+Replit.addEventListener('click', function() {
+  openLink3();
+});
+
+function openLink3(){
+  window.open(RURL, "_blank");
+}
+
+const searchBtn = document.getElementById("searchbtn");
+const searchInput = document.getElementById("search");
+
+searchbtn.addEventListener('click', function() {
+  const query = searchInput.value;
+  const url = `https://www.google.com/search?q=${query}`;
+  window.open(url, "_blank");
+});
+
+let github = document.getElementById("git");
+
+let giturl = "https://github.com";
+
+github.addEventListener('click', function() {
+  openLink4();
+});
+
+function openLink4(){
+  window.open(giturl, "_blank");
+}
+let yhu = document.getElementById("hacker");
+
+let you = "https://youtube.com/@hackera.u7970";
+
+yhu.addEventListener('click', function() {
+  openLink5();
+});
+
+function openLink5(){
+  window.open(you, "_blank");
+}
+</script>
+  
+  
+  
+</body>
+</html>
+
